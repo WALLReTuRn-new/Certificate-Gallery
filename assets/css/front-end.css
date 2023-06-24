@@ -1,0 +1,187 @@
+/*==========================================================
+=            Custom Download WP by Rockem            =
+==========================================================*/
+.download {
+    display: flex;
+    margin: 30px 0;
+    border: 1px solid #ddd;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.download.no-border {
+    border: 0;
+    border-radius: 5px;
+    background-color: white;
+    -moz-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .12), 0 1px 8px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 3px 4px 0 #00024, 0 3px 3px -2px #0001f, 0 1px 8px 0 #0003;
+}
+
+.download-icon {
+    display: flex;
+    padding: 30px;
+    border-right: 1px solid #ddd;
+    align-items: center;
+    align-content: center;
+}
+
+.download.no-border .download-icon {
+    padding-right: 0;
+    border: 0;
+}
+
+.download-icon::before {
+    width: 30px;
+    height: 38px;
+    content: '';
+    background: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhbCIgZGF0YS1pY29uPSJmaWxlLXdvcmQiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMzg0IDUxMiIgd2lkdGg9IjMwIiBoZWlnaHQ9IjM4IiBzdHlsZT0iY29sb3I6ICMwMDU3OTY7Ij4KICAgIDxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTM2OS45IDk3LjlMMjg2IDE0QzI3NyA1IDI2NC44LS4xIDI1Mi4xLS4xSDQ4QzIxLjUgMCAwIDIxLjUgMCA0OHY0MTZjMCAyNi41IDIxLjUgNDggNDggNDhoMjg4YzI2LjUgMCA0OC0yMS41IDQ4LTQ4VjEzMS45YzAtMTIuNy01LjEtMjUtMTQuMS0zNHptLTIyLjYgMjIuN2MyLjEgMi4xIDMuNSA0LjYgNC4yIDcuNEgyNTZWMzIuNWMyLjguNyA1LjMgMi4xIDcuNCA0LjJsODMuOSA4My45ek0zMzYgNDgwSDQ4Yy04LjggMC0xNi03LjItMTYtMTZWNDhjMC04LjggNy4yLTE2IDE2LTE2aDE3NnYxMDRjMCAxMy4zIDEwLjcgMjQgMjQgMjRoMTA0djMwNGMwIDguOC03LjIgMTYtMTYgMTZ6bS01My42LTI0Ni41Yy02LjggMzIuOC0zMi41IDEzOS43LTMzLjQgMTUwLjMtNS44LTI5LjEtLjcgMS42LTQxLjgtMTUwLjktMS40LTUuMi02LjItOC45LTExLjYtOC45aC02LjRjLTUuNCAwLTEwLjIgMy42LTExLjYgOC45LTM4LjMgMTQyLjMtMzcuNCAxNDAuNi0zOS40IDE1NC43LTQuMS0yMy45IDIuMS0yLjktMzQuNC0xNTQuNC0xLjMtNS40LTYuMS05LjItMTEuNy05LjJoLTcuMmMtNy44IDAtMTMuNSA3LjMtMTEuNiAxNC45IDkuNSAzOCAzNC41IDEzNy40IDQyLjIgMTY4IDEuMyA1LjMgNi4xIDkuMSAxMS42IDkuMWgxN2M1LjQgMCAxMC4yLTMuNyAxMS42LTguOSAzNC4yLTEyNy43IDMzLjUtMTIzLjQgMzYuNy0xNDIuOSA2LjUgMzEuMS4yIDcgMzYuNyAxNDIuOSAxLjQgNS4yIDYuMiA4LjkgMTEuNiA4LjloMTRjNS41IDAgMTMuNy0zLjcgMTUuMS05bDQyLjgtMTY4YzEuOS03LjYtMy44LTE1LTExLjYtMTVoLTYuOGMtNS43IDAtMTAuNiA0LTExLjggOS41eiI+PC9wYXRoPgo8L3N2Zz4=);
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.download-info {
+    display: flex;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.download-info div,
+.download-info p {
+    width: 100%;
+    margin: 0;
+}
+
+.download-file-name,
+.download-file-name a,
+.download-file-name h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: inherit;
+    margin-bottom: 4px !important;
+    text-align: left;
+    text-decoration: none !important;
+    color: #777 !important;
+}
+
+.download-file-name a {
+    padding-bottom: 1px;
+    transition: all .2s ease-in-out;
+    border-bottom: 1px solid transparent;
+}
+
+.download-file-name a:hover {
+    border-color: #777;
+}
+
+.download-file-size {
+    font-size: .75rem;
+    color: #ccc;
+}
+
+.download-button-area {
+    display: flex;
+    width: 210px;
+    min-width: 210px;
+    padding: 0 30px;
+    border-left: 1px solid #ddd;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.download.no-border .download-button-area {
+    border: 0;
+}
+
+.download-button {
+    font-size: .875rem;
+    display: flex;
+    width: 100%;
+    max-width: 140px;
+    height: 40px;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff !important;
+    border: none;
+    border-radius: 2px;
+    background: #005796;
+    box-shadow: 0 0 35px rgba(0, 0, 0, .05);
+    align-items: center;
+    justify-content: center;
+}
+
+.download-button:hover {
+    transition: .3s;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(0, 87, 150, .8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+.download.pdf .download-icon::before {
+    background: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhbCIgZGF0YS1pY29uPSJmaWxlLXBkZiIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzODQgNTEyIiB3aWR0aD0iMzAiIGhlaWdodD0iMzgiIHN0eWxlPSJjb2xvcjogI2RlMmIzMzsiPgogICAgPHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMzY5LjkgOTcuOUwyODYgMTRDMjc3IDUgMjY0LjgtLjEgMjUyLjEtLjFINDhDMjEuNSAwIDAgMjEuNSAwIDQ4djQxNmMwIDI2LjUgMjEuNSA0OCA0OCA0OGgyODhjMjYuNSAwIDQ4LTIxLjUgNDgtNDhWMTMxLjljMC0xMi43LTUuMS0yNS0xNC4xLTM0em0tMjIuNiAyMi43YzIuMSAyLjEgMy41IDQuNiA0LjIgNy40SDI1NlYzMi41YzIuOC43IDUuMyAyLjEgNy40IDQuMmw4My45IDgzLjl6TTMzNiA0ODBINDhjLTguOCAwLTE2LTcuMi0xNi0xNlY0OGMwLTguOCA3LjItMTYgMTYtMTZoMTc2djEwNGMwIDEzLjMgMTAuNyAyNCAyNCAyNGgxMDR2MzA0YzAgOC44LTcuMiAxNi0xNiAxNnptLTIyLTE3MS4yYy0xMy41LTEzLjMtNTUtOS4yLTczLjctNi43LTIxLjItMTIuOC0zNS4yLTMwLjQtNDUuMS01Ni42IDQuMy0xOCAxMi00Ny4yIDYuNC02NC45LTQuNC0yOC4xLTM5LjctMjQuNy00NC42LTYuOC01IDE4LjMtLjMgNDQuNCA4LjQgNzcuOC0xMS45IDI4LjQtMjkuNyA2Ni45LTQyLjEgODguNi0yMC44IDEwLjctNTQuMSAyOS4zLTU4LjggNTIuNC0zLjUgMTYuOCAyMi45IDM5LjQgNTMuMSA2LjQgOS4xLTkuOSAxOS4zLTI0LjggMzEuMy00NS41IDI2LjctOC44IDU2LjEtMTkuOCA4Mi0yNCAyMS45IDEyIDQ3LjYgMTkuOSA2NC42IDE5LjkgMjcuNy4xIDI4LjktMzAuMiAxOC41LTQwLjZ6bS0yMjkuMiA4OWM1LjktMTUuOSAyOC42LTM0LjQgMzUuNS00MC44LTIyLjEgMzUuMy0zNS41IDQxLjUtMzUuNSA0MC44ek0xODAgMTc1LjVjOC43IDAgNy44IDM3LjUgMi4xIDQ3LjYtNS4yLTE2LjMtNS00Ny42LTIuMS00Ny42em0tMjguNCAxNTkuM2MxMS4zLTE5LjggMjEtNDMuMiAyOC44LTYzLjcgOS43IDE3LjcgMjIuMSAzMS43IDM1LjEgNDEuNS0yNC4zIDQuNy00NS40IDE1LjEtNjMuOSAyMi4yem0xNTMuNC01LjlzLTUuOCA3LTQzLjUtOS4xYzQxLTMgNDcuNyA2LjQgNDMuNSA5LjF6Ij48L3BhdGg+Cjwvc3ZnPg==);
+}
+
+.download.pdf .download-button {
+    background: #de2b33;
+}
+
+.download.pdf .download-button:hover {
+    background: rgba(222, 43, 51, .8);
+}
+
+@media (max-width:700px) {
+    .download {
+        flex-wrap: wrap;
+    }
+
+    .download-icon {
+        width: 100%;
+        padding: 15px !important;
+        border-right: none;
+        border-bottom: 1px solid #e2e2e2;
+        justify-content: center;
+    }
+
+    .download.no-border .download-icon {
+        padding-bottom: 0;
+    }
+
+    .download-info {
+        width: 100%;
+        padding: 15px;
+        border-bottom: 1px solid #e2e2e2;
+    }
+
+    .download-info div,
+    .download-info p {
+        text-align: center;
+    }
+
+    .download-button-area {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        justify-content: center;
+    }
+}
+/*=====  End of Custom Download WP by Rockem  ======*/
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #000;
+    font-weight: 400;
+}
+.wp-container-7 > * {
+    max-width: 100%;
+}
+.gallery-pdf{
+    width: 100%;
+}
