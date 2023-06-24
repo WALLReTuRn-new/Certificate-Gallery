@@ -9,11 +9,11 @@ Stable tag: 5.6.11
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
 
 == Description ==
 
-
+This code has the ability to convert pdf documents to image.
+There is a direct option to open the WordPress gallery. After converting a PDF document to an image, it is possible to display it on a selected page in a WordPress site.
 
 == Installation ==
 
@@ -23,5 +23,3 @@ e.g.
 
 1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
-
-
